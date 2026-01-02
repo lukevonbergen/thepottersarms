@@ -86,8 +86,50 @@ const SpecialEvents = () => {
         </div>
       </section>
 
-      {/* What We Offer */}
+      {/* Quiz Nights */}
       <section className="section-darker">
+        <div className="container">
+          <div className="two-column reveal">
+            <div>
+              <h2 style={{ marginBottom: '2rem' }}>Quiz Nights</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                Wednesday digital speedquiz. Test your knowledge of trivia, celebrity, films, TV, sport and music.
+                Just £6 per person to play with a £200 jackpot up for grabs.
+              </p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                Download the SpeedQuizzing app (1 required per team) and join in the fun!
+              </p>
+              <div style={{
+                background: 'var(--primary-bg)',
+                padding: '1.5rem',
+                border: '1px solid var(--border-color)',
+                marginTop: '1.5rem'
+              }}>
+                <h3 style={{ color: 'var(--highlight-gold)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem' }}>
+                  When
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.1rem' }}>
+                  Wednesdays from 8pm
+                </p>
+              </div>
+            </div>
+            <div>
+              <div
+                style={{
+                  height: '400px',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  border: '1px solid var(--border-color)',
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Offer */}
+      <section className="section-dark">
         <div className="container">
           <div className="two-column reveal">
             <div>
