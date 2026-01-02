@@ -3,11 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import LiveSport from './pages/LiveSport';
+import About from './pages/About';
 import Menu from './pages/Menu';
-import WhatsOn from './pages/WhatsOn';
-import PrivateHire from './pages/PrivateHire';
-import Contact from './pages/Contact';
+import BookARoom from './pages/BookARoom';
+import ComedyNights from './pages/ComedyNights';
+import SpecialEvents from './pages/SpecialEvents';
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/live-sport" element={<LiveSport />} />
+        <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/whats-on" element={<WhatsOn />} />
-        <Route path="/private-hire" element={<PrivateHire />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/book-a-room" element={<BookARoom />} />
+        <Route path="/comedy-nights" element={<ComedyNights />} />
+        <Route path="/special-events" element={<SpecialEvents />} />
       </Routes>
       <Footer />
     </div>

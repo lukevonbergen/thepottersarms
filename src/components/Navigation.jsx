@@ -33,18 +33,18 @@ const Navigation = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/live-sport', label: 'Live Sport' },
+    { path: '/about', label: 'About' },
     { path: '/menu', label: 'Menu' },
-    { path: '/whats-on', label: "What's On" },
-    { path: '/private-hire', label: 'Private Hire' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/book-a-room', label: 'Book a Room' },
+    { path: '/comedy-nights', label: 'Comedy Nights' },
+    { path: '/special-events', label: 'Special Events' },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="nav-logo">
-          Annie Twomey's
+          <img src="/images/logo-icon.avif" alt="Potters Arms" className="nav-logo-img" />
         </Link>
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

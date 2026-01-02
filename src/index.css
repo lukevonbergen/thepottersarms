@@ -7,11 +7,11 @@
   --primary-bg: #0A0A0A;
   --secondary-bg: #1A1A1A;
   --tertiary-bg: #141414;
-  --accent-green: #A91C1F;
-  --accent-green-dark: #8A1619;
-  --accent-green-light: #C42326;
-  --highlight-gold: #BB7A00;
-  --highlight-gold-light: #D99000;
+  --accent-green: #BAC29F;
+  --accent-green-dark: #9AA880;
+  --accent-green-light: #CAD2AF;
+  --highlight-gold: #B08D17;
+  --highlight-gold-light: #C9A41E;
   --text-primary: #F5F5F5;
   --text-secondary: #9A9A9A;
   --text-muted: #6A6A6A;
@@ -118,6 +118,11 @@ a:hover {
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.nav-logo-img {
+  height: 50px;
+  filter: invert(1) brightness(2);
 }
 
 .nav-menu {
@@ -328,10 +333,10 @@ a:hover {
   background: var(--highlight-gold);
 }
 
-/* Middle item - red background, slightly taller */
+/* Middle item - green background, slightly taller */
 .quick-action:nth-child(2) {
   background: var(--accent-green);
-  color: var(--text-primary);
+  color: var(--primary-bg);
   padding: 1.25rem 1.5rem;
 }
 
@@ -438,15 +443,15 @@ section {
 
 .btn-primary {
   background: var(--accent-green);
-  color: var(--text-primary);
+  color: var(--primary-bg);
   border: 2px solid var(--accent-green);
 }
 
 .btn-primary:hover {
   background: var(--accent-green-light);
   border-color: var(--accent-green-light);
-  color: var(--text-primary);
-  box-shadow: 0 0 20px rgba(45, 90, 61, 0.4);
+  color: var(--primary-bg);
+  box-shadow: 0 0 20px rgba(186, 194, 159, 0.4);
 }
 
 .btn-outline {
@@ -457,7 +462,7 @@ section {
 
 .btn-outline:hover {
   background: var(--accent-green);
-  color: var(--text-primary);
+  color: var(--primary-bg);
 }
 
 .btn-gold {
@@ -679,6 +684,39 @@ section {
 }
 
 /* Menu Page Styles */
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.menu-tab {
+  padding: 1rem 2rem;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-tab:hover {
+  border-color: var(--accent-green);
+  color: var(--text-primary);
+}
+
+.menu-tab.active {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: var(--primary-bg);
+}
+
 .menu-section {
   padding: 4rem 0;
 }
@@ -815,6 +853,13 @@ section {
 
 .footer-logo {
   text-align: center;
+}
+
+.footer-logo-img {
+  height: 60px;
+  margin: 0 auto 0.5rem;
+  display: block;
+  filter: invert(1) brightness(2);
 }
 
 .footer-logo-text {
@@ -961,7 +1006,7 @@ section {
 }
 
 .sport-item:hover .sport-item-overlay {
-  background: rgba(169, 28, 31, 0.7);
+  background: rgba(186, 194, 159, 0.7);
 }
 
 .sport-item span {

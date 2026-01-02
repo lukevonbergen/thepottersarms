@@ -10,23 +10,22 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Opening Hours</h4>
             <p>
-              Monday - Thursday: 12pm - 11pm<br />
-              Friday - Saturday: 12pm - 12am<br />
-              Sunday: 12pm - 10:30pm
+              Monday - Friday: 11am - 11pm<br />
+              Saturday - Sunday: 10am - 12am
             </p>
           </div>
 
           {/* Logo/Crest Center */}
           <div className="footer-section footer-logo">
-            <div className="footer-logo-text">Annie Twomey's</div>
+            <img src="/images/logo-icon.avif" alt="Potters Arms" className="footer-logo-img" />
             <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-              Southgate, London
+              Winchmore Hill, Bucks
             </p>
 
             {/* Social Icons */}
             <div className="footer-social">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ThePottersArms/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -36,7 +35,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/thepottersarmspub/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -52,20 +51,20 @@ const Footer = () => {
           <div className="footer-section" style={{ textAlign: 'right' }}>
             <h4>Quick Links</h4>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <Link to="/live-sport" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Live Sport</Link>
+              <Link to="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>About</Link>
               <Link to="/menu" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Menu</Link>
-              <Link to="/whats-on" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>What's On</Link>
-              <Link to="/private-hire" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Private Hire</Link>
-              <Link to="/contact" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Contact</Link>
+              <Link to="/book-a-room" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Book a Room</Link>
+              <Link to="/comedy-nights" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Comedy Nights</Link>
+              <Link to="/special-events" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Special Events</Link>
             </nav>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>Annie Twomey's - 123 High Street, Southgate, London N14 6AA</p>
-          <p>Tel: 020 1234 5678 | info@annietwomeys.co.uk</p>
-          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} Annie Twomey's. All rights reserved.</p>
+          <p>The Potters Arms - Fagnall Lane, Winchmore Hill, Bucks, HP7 0PH</p>
+          <p>Tel: 01494 726222 | Info@pottersarms.co.uk</p>
+          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} The Potters Arms. All rights reserved.</p>
         </div>
       </div>
     </footer>
