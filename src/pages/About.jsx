@@ -148,7 +148,7 @@ const About = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=2070)',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1590674899484-d5640e854abe?q=80&w=2070)',
                 }}
               ></div>
               <div className="event-card-content">
@@ -161,7 +161,7 @@ const About = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069)',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2084)',
                 }}
               ></div>
               <div className="event-card-content">
