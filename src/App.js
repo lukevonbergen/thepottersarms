@@ -8,6 +8,8 @@ import Menu from './pages/Menu';
 import BookARoom from './pages/BookARoom';
 import ComedyNights from './pages/ComedyNights';
 import SpecialEvents from './pages/SpecialEvents';
+import Wakes from './pages/Wakes';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/book-a-room" element={<BookARoom />} />
         <Route path="/comedy-nights" element={<ComedyNights />} />
         <Route path="/special-events" element={<SpecialEvents />} />
+        <Route path="/wakes" element={<Wakes />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </div>

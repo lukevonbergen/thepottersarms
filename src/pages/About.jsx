@@ -57,6 +57,67 @@ const About = () => {
         </div>
       </section>
 
+      {/* Our Story Section */}
+      <section className="section-darker">
+        <div className="container">
+          <div className="two-column reveal">
+            <div>
+              <h2 style={{ marginBottom: '2rem' }}>A Nepalese Pub with a British Soul</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                At our heart, we are a Nepalese pub with a British soul — a place where two rich cultures meet over good food, good drink, and good company.
+              </p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                Nepal and Britain share a long and proud history, built on mutual respect, friendship, and service. From the bravery of the Gurkhas to generations of Nepalese families making the UK their home, our pub is inspired by that connection — a story of cultures coming together rather than standing apart.
+              </p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                In our kitchen, this shared heritage comes to life. We serve traditional Nepalese dishes full of warmth, spice, and history, alongside classic English pub favourites you know and love. Whether you're here for a comforting roast, a hearty curry, or something new to discover, our menu reflects who we are: familiar, welcoming, and proudly blended.
+              </p>
+            </div>
+            <div>
+              <div
+                style={{
+                  height: '100%',
+                  minHeight: '400px',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  border: '1px solid var(--border-color)',
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Section */}
+      <section className="section-dark">
+        <div className="container">
+          <div className="two-column reveal">
+            <div>
+              <div
+                style={{
+                  height: '100%',
+                  minHeight: '350px',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=2074)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  border: '1px solid var(--border-color)',
+                }}
+              ></div>
+            </div>
+            <div>
+              <h2 style={{ marginBottom: '2rem' }}>More Than Just a Pub</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                But our pub is about more than food. It's about community. A place where locals, friends, and families gather. Where stories are shared, traditions are respected, and everyone is welcome — whether you've grown up down the road or travelled from the foothills of the Himalayas.
+              </p>
+              <p style={{ color: 'var(--text-secondary)' }}>
+                We invite you to come in, take a seat, and be part of our story — one pint, one plate, and one conversation at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Book a Table, Room or Pub */}
       <section className="section-darker">
         <div className="container">

@@ -38,6 +38,8 @@ const Navigation = () => {
     { path: '/book-a-room', label: 'Book a Room' },
     { path: '/comedy-nights', label: 'Comedy Nights' },
     { path: '/special-events', label: 'Special Events' },
+    { path: '/wakes', label: 'Wakes' },
+    { path: '/gallery', label: 'Gallery' },
   ];
 
   return (

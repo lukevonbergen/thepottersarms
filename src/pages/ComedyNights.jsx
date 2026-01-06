@@ -28,6 +28,19 @@ const ComedyNights = () => {
     'Zoe Lyons',
   ];
 
+  const previousShows = [
+    {
+      image: '/images/comedy/thursday4thdec.avif',
+      title: 'Comedy Night',
+      date: 'Thursday 4th December',
+    },
+    {
+      image: '/images/comedy/thursday18thdec.avif',
+      title: 'Comedy Night',
+      date: 'Thursday 18th December',
+    },
+  ];
+
   return (
     <main>
       <Helmet>
@@ -148,10 +161,19 @@ const ComedyNights = () => {
           <div className="section-header reveal">
             <h2 className="section-title">Upcoming Shows</h2>
             <p className="section-subtitle">
-              Check back soon for our upcoming comedy night schedule. Follow us on social media
-              for the latest announcements.
+              Check back soon for our upcoming comedy night schedule. When shows are announced, you can book your tickets via WeGotTickets.
             </p>
-            <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+            <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              <a
+                href="https://www.wegottickets.com/location/19498"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Buy Tickets on WeGotTickets
+              </a>
+            </div>
+            <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
               <a
                 href="https://www.facebook.com/ThePottersArms/"
                 target="_blank"
@@ -179,16 +201,69 @@ const ComedyNights = () => {
         </div>
       </section>
 
+      {/* Previous Shows */}
+      <section className="section-dark">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2 className="section-title">Previous Shows</h2>
+            <p className="section-subtitle">
+              Take a look at some of our past comedy nights.
+            </p>
+          </div>
+
+          <div
+            className="reveal"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '2rem',
+              marginTop: '2rem',
+            }}
+          >
+            {previousShows.map((show, index) => (
+              <div
+                key={index}
+                style={{
+                  background: 'var(--primary-bg)',
+                  border: '1px solid var(--border-color)',
+                  overflow: 'hidden',
+                }}
+              >
+                <div
+                  style={{
+                    height: '400px',
+                    backgroundImage: `url(${show.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center top',
+                  }}
+                ></div>
+                <div style={{ padding: '1.5rem', textAlign: 'center' }}>
+                  <h3 style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{show.title}</h3>
+                  <p style={{ color: 'var(--highlight-gold)' }}>{show.date}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="newsletter">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">Book Your Tickets</h2>
+            <h2 className="section-title">Don't Miss Out</h2>
             <p className="section-subtitle">
-              Don't miss out on our next comedy night. Call us to reserve your seats.
+              Our comedy nights sell out fast. Book your tickets as soon as shows are announced!
             </p>
             <div style={{ marginTop: '2rem' }}>
-              <a href="https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=0180db87-f8bb-4ac5-8b69-50bd748dac20&restRef=97176" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Reserve a Table</a>
+              <a
+                href="https://www.wegottickets.com/location/19498"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                View Upcoming Shows
+              </a>
             </div>
           </div>
         </div>
