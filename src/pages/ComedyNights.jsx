@@ -165,7 +165,7 @@ const ComedyNights = () => {
             </p>
             <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <a
-                href="https://www.wegottickets.com/location/19498"
+                href="https://wegottickets.com/ThePottersArms"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -257,7 +257,7 @@ const ComedyNights = () => {
             </p>
             <div style={{ marginTop: '2rem' }}>
               <a
-                href="https://www.wegottickets.com/location/19498"
+                href="https://wegottickets.com/ThePottersArms"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
